@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/photos/stylish-table-desk-workspace-on-black-background-picture-id1296308898?k=20&m=1296308898&s=612x612&w=0&h=5nn7IzPm_cn4Yc1nqLn018tQ0EO0pHcMdSSepVu6UOM=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: var(--container-bg-color);
+    /* background-image: url('static/Wall.JPG'); */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+header p {
+    color: var(--text-muted-color);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    transition: transform 0.2s ease-in-out;
+}
+
+.intro:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.intro span:hover {
+    color: cyan;
+    font-weight: bold;
+}
+
+.skills h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin: 5px 0;
+    color: var(--text-muted-color);
+    transition: color 0.3s;
+}
+
+.skills li:hover {
+    color: tomato;
+    font-weight: bold;
+}
+
+.image-section {
+    position: relative;
+    max-width: 300px;
+    flex: 1;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logo {
+    top: -90px;
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    width: 60px;
+    opacity: 0.8;
+}
+
+/* Theme Variables */
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --text-muted-color: #666;
+    --container-bg-color: #fff;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --text-muted-color: #aaaaaa;
+    --container-bg-color: #333;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.twittor {
+    margin: 0px;
+    width: 60px;
+    height: 30px;
+}
+.twittor img {
+    width: 47px;
+    margin-top: 1px;
+}
